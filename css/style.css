@@ -224,7 +224,7 @@ h1 u {
 /* --------banner-section----------- */
 .banner-section {
   padding: 50px 0px;
-  min-height: 750px;
+  min-height: 600px;
   background-image: linear-gradient(
     to right top,
     #051937,
