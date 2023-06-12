@@ -97,6 +97,21 @@ h1 u {
   body .service-section .image {
     left: 10%;
   }
+  body .accordion-button::before,
+  body .accordion-button::after {
+    display: none;
+  }
+  body .bg-images img {
+    width: 100%;
+}
+  body .accordion-button {
+    padding-left: 15px;
+    font-weight: normal;
+    color: blueviolet;
+  }
+  body .accordion-button:not(.collapsed) {
+    color: blueviolet;
+  }
 }
 @media (max-width: 576px) {
   body #header .logo img {
@@ -437,6 +452,70 @@ h1 u {
 }
 .frequent-section .image img {
   width: 100%;
+  margin-bottom: 50px;
+}
+.accordion-item{
+  margin: 10px 0px;
+}
+.accordion-button {
+  position: relative;
+  padding-left: 80px;
+  overflow-x: hidden;
+  font-weight: bold;
+  background-color: #e7f1ff;
+}
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #e7f1ff;
+}
+.accordion-button:not(.collapsed)::before {
+  display: none;
+  background-image: none;
+}
+.accordion-button::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 15px;
+  padding-bottom: 5px;
+  content: "+";
+  color: green;
+  background-color: #ffffff;
+  width: 17px;
+  height: 17px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: none;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  transform: none;
+  background-image: none;
+}
+
+.accordion-button::before {
+  position: absolute;
+  left: -10px;
+  content: "";
+  width: 70px;
+  height: 100%;
+  overflow: hidden;
+  transform: skew(25deg);
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #251b5b, #236c8c, #21d721);
+  color: #ffffff;
+}
+.accordion-button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-collapse {
+  border: none;
+  background-color: #FCFDFE;
 }
 
 /* service-section */
