@@ -54,6 +54,11 @@ h1 u {
     display: block;
     width: 100%;
   }
+  body #header.active #nav-toggle .bar,
+  body #header.active #nav-toggle .bar::before,
+  body #header.active #nav-toggle .bar::after {
+    background-color: #a500d3;
+  }
   body .menu .button a {
     text-align: center;
     margin-top: 20px;
@@ -83,11 +88,6 @@ h1 u {
   }
   body #header .logo img {
     width: 180px;
-  }
-  body #header.active #nav-toggle .bar,
-  body #header.active #nav-toggle .bar::before,
-  body #header.active #nav-toggle .bar::after {
-    background-color: #a500d3;
   }
   body .polish-section .box .image {
     background-size: 50%;
@@ -675,6 +675,101 @@ h1 u {
   text-transform: uppercase;
   background-color: #00bf72;
 }
+/* --------------End------------ */
+/* ---------article-section------- */
+.article-section {
+  position: relative;
+  padding: 50px 0px;
+  min-height: 600px;
+  text-align: center;
+}
+
+.bg-wave{
+  position: absolute;
+  bottom: -100px;
+  height: 100px;
+  left: 0;
+  width: 100%;
+  background-image: url('../images/ddd.svg');
+  background-repeat: no-repeat;
+}
+.article-section .wave1{
+
+}
+.article-section .wave2{
+  background-position: left;
+  opacity: .5s;
+  animation-name: wave1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wave1 {
+  0%{
+    background-position-x: 0px;
+  }
+  100%{
+    background-position-x: 1800px;
+  }
+}
+.article-section .wave3{
+  background-position: right;
+  background-position-x: -180px;
+}
+.box {
+  position: relative;
+  margin: 30px 0px;
+  min-height: 300px;
+}
+
+.article-section .box .bg-box {
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px grey;
+  border-radius: 20px;
+  bottom: 0;
+}
+.article-section .box .bg-box h4 a{
+  position: absolute;
+  width: 100%;
+  padding: 0px 30px;
+  text-align: left;
+  left: 0px;
+  bottom: 10px;
+  color: #000000;
+}
+.box .image img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 95%;
+  z-index: 2;
+}
+/* .article-section .btn{
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50px;
+} */
+.article-section .btn{
+  padding-top: 50px;
+  transition: .3s ease;
+}
+.article-section .btn:hover{
+  padding-top: 30px;
+}
+.article-section .btn a {
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #251b5b, #236c8c, #21d721);
+}
+
 /* --------------End------------ */
 /* a{
 display: flex;
