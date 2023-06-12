@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   overflow-x: hidden;
 }
 ul {
@@ -94,6 +94,9 @@ h1 u {
     padding-top: 50px;
     color: #ffffff;
   }
+  body .service-section .image {
+    left: 10%;
+  }
 }
 @media (max-width: 576px) {
   body #header .logo img {
@@ -102,7 +105,7 @@ h1 u {
   body .polish-section .box .image {
     background-size: 60%;
   }
-  body .polish-section .box{
+  body .polish-section .box {
     margin-bottom: 20px;
   }
 }
@@ -428,6 +431,13 @@ h1 u {
 .count p {
   font-weight: bold;
 }
+/* --------frequent-section------- */
+.frequent-section {
+  padding: 50px 0px;
+}
+.frequent-section .image img {
+  width: 100%;
+}
 
 /* service-section */
 .service-section {
@@ -598,11 +608,12 @@ footer .image img {
   color: #ffffff;
   transition: 0.3s ease;
 }
-.footer-link .contact-no{
-  transition: .3s ease;
+.footer-link .contact-no {
+  transition: 0.3s ease;
   cursor: pointer;
 }
-.footer-link .contact-no:hover,.social-menu ul li a:hover {
+.footer-link .contact-no:hover,
+.social-menu ul li a:hover {
   padding-left: 5px;
 }
 /* -----------End---------- */
