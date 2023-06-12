@@ -93,12 +93,12 @@ h1 u {
   body .about-section .image {
     margin-top: 30px;
   }
+  body .service-section {
+    min-height: 750px;
+  }
   body .service-section h1 {
     padding-top: 50px;
     color: #ffffff;
-  }
-  body .service-section .image {
-    left: 10%;
   }
   body .accordion-button::before,
   body .accordion-button::after {
@@ -122,6 +122,13 @@ body .frequent-section .image{
 @media (max-width: 576px) {
   body #header .logo img {
     width: 130px;
+  }
+  body .service-section .image {
+    margin-top: -30px;
+    padding: 30px 0px;
+}
+  body .service-section {
+    min-height: 650px;
   }
   body .polish-section .box .image {
     background-size: 60%;
@@ -531,7 +538,7 @@ body .frequent-section .image{
 /* service-section */
 .service-section {
   position: relative;
-  min-height: 700px;
+  min-height: 600px;
   background: linear-gradient(50deg, #134c89 35%, #57d540);
 }
 .service-section h1 {
@@ -540,6 +547,7 @@ body .frequent-section .image{
 }
 .service-section .image {
   position: absolute;
+  z-index: 1;
   animation: upDown 1s 0s infinite alternate-reverse;
 }
 @-webkit-keyframes upDown {
@@ -575,6 +583,7 @@ body .frequent-section .image{
   padding: 15px 35px;
 }
 .service-section .image {
+  margin-top: 50px;
   padding: 30px 0px;
 }
 .bg-images img {
@@ -601,6 +610,7 @@ body .frequent-section .image{
   min-height: 500px;
   background-image: url(../images/testimonial-bg-shape.png);
   display: none;
+  z-index: 2;
 }
 .testomonial-section .owl-carousel .item {
   display: flex;
@@ -619,6 +629,7 @@ body .frequent-section .image{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 3;
 }
 .subscribe-section .top-text {
   margin-top: 100px;
