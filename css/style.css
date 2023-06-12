@@ -686,36 +686,72 @@ h1 u {
 
 .bg-wave{
   position: absolute;
-  bottom: -100px;
-  height: 100px;
   left: 0;
   width: 100%;
-  background-image: url('../images/ddd.svg');
-  background-repeat: no-repeat;
+  height: 100px;
+  background-repeat:repeat-x;
 }
 .article-section .wave1{
-
-}
-.article-section .wave2{
+  position: absolute;
+  bottom: -50px;
+  background-image: url('../images/ddd.svg');
   background-position: left;
-  opacity: .5s;
   animation-name: wave1;
-  animation-duration: 5s;
+  animation-duration: 3s;
+  animation-direction: reverse;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  opacity: 1;
 }
 @keyframes wave1 {
   0%{
     background-position-x: 0px;
   }
   100%{
-    background-position-x: 1800px;
+    background-position-x: 1300px;
   }
 }
-.article-section .wave3{
+/* .article-section .wave2{
   background-position: right;
-  background-position-x: -180px;
+  bottom: -100px;
+  opacity: .6;
+  background-image: url('../images/ddd.svg');
+  animation-name: wave1;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
+
+@keyframes wave2 {
+  0%{
+    background-position-x: 1200px;
+  }
+  100%{
+    background-position-x: 0px;
+  }
+} */
+/* .article-section .wave3{
+  background-position: right;
+  bottom: -100px;
+  opacity: 1;
+  background-image: url('../images/ddd.svg');
+  animation-name: wave3;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave3 {
+  0%{
+    background-position-x: 0px
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+} */
 .box {
   position: relative;
   margin: 30px 0px;
