@@ -62,9 +62,6 @@ h1 u {
     background-image: linear-gradient(45deg, #251b5b, #236c8c, #21d721);
     color: #ffffff;
   }
-  body .polish-section .box .image {
-    background-size: 75%;
-  }
   body .about-section .image {
     margin-top: 180px;
   }
@@ -101,6 +98,12 @@ h1 u {
 @media (max-width: 576px) {
   body #header .logo img {
     width: 130px;
+  }
+  body .polish-section .box .image {
+    background-size: 60%;
+  }
+  body .polish-section .box{
+    margin-bottom: 20px;
   }
 }
 /* -----------End---------- */
@@ -595,7 +598,11 @@ footer .image img {
   color: #ffffff;
   transition: 0.3s ease;
 }
-.social-menu ul li a:hover {
+.footer-link .contact-no{
+  transition: .3s ease;
+  cursor: pointer;
+}
+.footer-link .contact-no:hover,.social-menu ul li a:hover {
   padding-left: 5px;
 }
 /* -----------End---------- */
