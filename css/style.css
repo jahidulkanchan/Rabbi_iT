@@ -65,6 +65,9 @@ h1 u {
   body .about-section .image {
     margin-top: 180px;
   }
+  body .frequent-section .image{
+    top: 30%;
+  }
 }
 @media (max-width: 768px) {
   body .header-menu nav .menu {
@@ -103,6 +106,9 @@ h1 u {
   }
   body .bg-images img {
     width: 100%;
+}
+body .frequent-section .image{
+  top: 0%;
 }
   body .accordion-button {
     padding-left: 15px;
@@ -450,6 +456,10 @@ h1 u {
 .frequent-section {
   padding: 50px 0px;
 }
+.frequent-section .image{
+  text-align: center;
+  position: relative;
+}
 .frequent-section .image img {
   width: 100%;
   margin-bottom: 50px;
@@ -497,9 +507,9 @@ h1 u {
 
 .accordion-button::before {
   position: absolute;
-  left: -10px;
+  left: -20px;
   content: "";
-  width: 70px;
+  width: 80px;
   height: 100%;
   overflow: hidden;
   transform: skew(25deg);
