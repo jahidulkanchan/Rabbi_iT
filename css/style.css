@@ -432,7 +432,7 @@ h1 u {
 /* service-section */
 .service-section {
   position: relative;
-  min-height: 650px;
+  min-height: 700px;
   background: linear-gradient(50deg, #134c89 35%, #57d540);
 }
 .service-section h1 {
