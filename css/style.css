@@ -71,6 +71,10 @@ h1 u {
   body .assets-section .image{
     margin-top: 60%;
   }
+  
+body .assets-section .border-box .circle {
+  background-color: #ffcece;
+}
 }
 @media (max-width: 768px) {
   body .header-menu nav .menu {
