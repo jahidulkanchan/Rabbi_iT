@@ -656,7 +656,6 @@ h1 u {
   padding: 50px 0px;
   min-height: 500px;
   background-image: url(../images/testimonial-bg-shape.png);
-  display: none;
   z-index: 2;
 }
 .testomonial-section .owl-carousel .item {
