@@ -665,7 +665,6 @@ h1 u {
 }
 .image-box .icon img {
   width: 100px;
-  margin: 40px 50px;
   border-radius: 50%;
 }
 /* --------testomonial-section----------- */
@@ -798,10 +797,11 @@ h1 u {
   }
 }
 
-.box {
+.article-section .box {
   position: relative;
-  margin: 30px 0px;
+  margin: 100px 0px 30px 0px;
   min-height: 300px;
+  cursor: pointer;
 }
 
 .article-section .box .bg-box {
@@ -833,6 +833,44 @@ h1 u {
   width: 95%;
   z-index: 2;
 }
+.article-section .box .image{
+  position: relative;
+}
+.article-section .box .image::after{
+  position: absolute;
+  content: '18';
+  font-size: 40px;
+  font-weight: bold;
+  bottom: 10px;
+  color: #ffffff;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: linear-gradient(50deg, #134c89 35%, #57d540);
+  z-index: 4;
+  transition: .3s ease;
+}
+.article-section .box:hover .image::after{
+background: #ffffff;
+color: #a500d3;
+}
+.article-section .box:hover .image::before{
+  color: #a500d3;
+  }
+.article-section .box .image::before{
+  position: absolute;
+  content: 'Jun 20';
+  font-size: 20px;
+  bottom: -50px;
+  color: #ffffff;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  z-index: 5;
+  transition: .3s ease;
+}
 .article-section .btn {
   padding: 50px 0px;
   transition: 0.3s ease;
@@ -848,7 +886,38 @@ h1 u {
 }
 
 /* --------------End------------ */
+.owl-prev,.owl-next{
+  width: 20px;
 
+  position: relative !important;
+  background-color: #00000000 !important;
+  color: #00000000 !important;
+}
+.owl-prev{
+  margin: 0px 20px 0px 0px !important;
+}
+.owl-theme .owl-nav {
+  text-align: right ;
+}
+.owl-next::before,.owl-prev::before{
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-family: "Font Awesome 6 Free";
+  content: '';
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #15c701;
+}
+.owl-prev::before{
+  content: '\f104';
+}
+.owl-next::before{
+  content: '\f105';
+}
 /* ---------footer---------- */
 footer {
   padding: 200px 0px 50px 0px;
