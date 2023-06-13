@@ -19,6 +19,28 @@ h1 u {
   -webkit-text-decoration-color: #57d540;
   text-decoration-color: #57d540;
 }
+
+/* Top-scroll */
+#whats-up a{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+  right: 15px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #49e353fd;
+box-shadow: 2px 2px 5px #808080;
+  z-index: 99999;
+  visibility: visible;
+  transition: all .4s ease;
+}
+
 /*  -----------Media Query--------- */
 
 @media (max-width: 992px) {
@@ -147,6 +169,11 @@ h1 u {
   }
 }
 @media (max-width: 576px) {
+  body #whats-up a{
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+  }
   body #header .logo img {
     width: 130px;
   }
