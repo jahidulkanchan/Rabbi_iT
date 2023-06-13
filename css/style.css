@@ -807,7 +807,7 @@ h1 u {
   transition: 0.3s ease;
 }
 .article-section .btn:hover {
-  padding-top: 30px;
+  transform: translateY(-30px);
 }
 .article-section .btn a {
   padding: 15px 30px;
