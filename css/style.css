@@ -199,8 +199,23 @@ h1 u {
   background-color: #49e353fd;
   box-shadow: 2px 2px 5px #808080;
   z-index: 99999;
-  visibility: visible;
   transition: all 0.4s ease;
+  animation: showUp 1.5s linear 0s 1;
+  /* animation-name: showUp;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite; */
+}
+@keyframes showUp {
+  0% {
+   opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* -----------End---------- */
 /* ----------header-part---------- */
@@ -763,7 +778,7 @@ h1 u {
   left: 0px;
   opacity: 0.5;
   -webkit-animation-delay: -4s;
-          animation-delay: -4s;
+  animation-delay: -4s;
   animation: wave1 15s linear infinite alternate-reverse;
   background-image: url(../images/wave\ 1.svg);
   background-position: bottom;
@@ -773,9 +788,9 @@ h1 u {
   left: 0px;
   opacity: 0.4;
   -webkit-animation-delay: -8s;
-          animation-delay: -8s;
+  animation-delay: -8s;
   -webkit-animation: wave1 30s linear infinite normal;
-          animation: wave1 30s linear infinite normal;
+  animation: wave1 30s linear infinite normal;
   background-image: url(../images/wave\ 1.svg);
   background-position: bottom;
   background-size: cover;
@@ -833,12 +848,12 @@ h1 u {
   width: 95%;
   z-index: 2;
 }
-.article-section .box .image{
+.article-section .box .image {
   position: relative;
 }
-.article-section .box .image::after{
+.article-section .box .image::after {
   position: absolute;
-  content: '18';
+  content: "18";
   font-size: 40px;
   font-weight: bold;
   bottom: 10px;
@@ -849,18 +864,18 @@ h1 u {
   border-radius: 15px;
   background: linear-gradient(50deg, #134c89 35%, #57d540);
   z-index: 4;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-.article-section .box:hover .image::after{
-background: #ffffff;
-color: #a500d3;
-}
-.article-section .box:hover .image::before{
+.article-section .box:hover .image::after {
+  background: #ffffff;
   color: #a500d3;
-  }
-.article-section .box .image::before{
+}
+.article-section .box:hover .image::before {
+  color: #a500d3;
+}
+.article-section .box .image::before {
   position: absolute;
-  content: 'Jun 20';
+  content: "Jun 20";
   font-size: 20px;
   bottom: -50px;
   color: #ffffff;
@@ -869,7 +884,7 @@ color: #a500d3;
   height: 100px;
   border-radius: 8px;
   z-index: 5;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .article-section .btn {
   padding: 50px 0px;
@@ -886,25 +901,27 @@ color: #a500d3;
 }
 
 /* --------------End------------ */
-.owl-prev,.owl-next{
+.owl-prev,
+.owl-next {
   width: 20px;
 
   position: relative !important;
   background-color: #00000000 !important;
   color: #00000000 !important;
 }
-.owl-prev{
+.owl-prev {
   margin: 0px 20px 0px 0px !important;
 }
 .owl-theme .owl-nav {
-  text-align: right ;
+  text-align: right;
 }
-.owl-next::before,.owl-prev::before{
+.owl-next::before,
+.owl-prev::before {
   position: absolute;
   top: 0;
   left: 5px;
   font-family: "Font Awesome 6 Free";
-  content: '';
+  content: "";
   font-size: 22px;
   font-weight: bold;
   display: flex;
@@ -912,11 +929,11 @@ color: #a500d3;
   align-items: center;
   color: #15c701;
 }
-.owl-prev::before{
-  content: '\f104';
+.owl-prev::before {
+  content: "\f104";
 }
-.owl-next::before{
-  content: '\f105';
+.owl-next::before {
+  content: "\f105";
 }
 /* ---------footer---------- */
 footer {
