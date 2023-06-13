@@ -181,6 +181,15 @@ h1 u {
     bottom: -130px;
   }
 }
+@media (max-width: 500px) {
+  body .polish-section .box .image {
+    background-size: 75%;
+  }
+  body .polish-section .box .number {
+    top: -35px;
+    right: 30px;
+  }
+}
 /* -----------End---------- */
 /* ----------------Top-scroll---------- */
 #whats-up a {
@@ -208,7 +217,7 @@ h1 u {
 }
 @keyframes showUp {
   0% {
-   opacity: 0;
+    opacity: 0;
   }
   80% {
     opacity: 0;
