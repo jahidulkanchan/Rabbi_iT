@@ -660,10 +660,23 @@ h1 u {
 }
 .testomonial-section .owl-carousel .item {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px;
+  align-items: start;
+  min-height: 180px;
+  background-color: #ffffff00;
+}
+.testomonial-section .owl-carousel .item .client{
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-  background-color: #e7e8ea;
+}
+.testomonial-section .owl-carousel .item .client img{
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px 0px 0px;
+  border-radius: 50%;
 }
 /* ----------subscribe-section----------- */
 
