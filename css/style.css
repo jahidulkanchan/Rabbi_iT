@@ -128,6 +128,23 @@ h1 u {
   body .accordion-button:not(.collapsed) {
     color: blueviolet;
   }
+  body .article-section .box {
+    margin: 80px 0px;
+  }
+
+  body .article-section .box .bg-box {
+    min-height: 250px;
+    bottom: -100px;
+  }
+  body .article-section .btn {
+    margin-top: 30px;
+  }
+  body .article-section .box .bg-box h4 a {
+    padding: 20px 30px;
+  }
+  body body .box .image img {
+    top: -80px;
+  }
 }
 @media (max-width: 576px) {
   body #header .logo img {
@@ -145,6 +162,21 @@ h1 u {
   }
   body .polish-section .box {
     margin-bottom: 20px;
+  }
+
+
+  body .article-section .box .bg-box {
+    min-height: 200px;
+    bottom: -60px;
+  }
+  body .article-section .btn {
+    margin-top: 0px;
+  }
+  body .article-section .box .bg-box h4 a {
+    padding: 20px 30px;
+  }
+  body body .box .image img {
+    top: -50px;
   }
 }
 /* -----------End---------- */
@@ -635,11 +667,12 @@ h1 u {
   position: relative;
   min-height: 400px;
   padding: 50px 0px;
-  background-image: url(../images/wave.svg);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/wave.svg); */
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 3;
+  z-index: 3; */
+  background-image: linear-gradient(177deg, #ffffff 30%, #1cda7bf1 20%);
 }
 .subscribe-section .top-text {
   margin-top: 100px;
@@ -679,75 +712,56 @@ h1 u {
 /* ---------article-section------- */
 .article-section {
   position: relative;
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
   min-height: 600px;
   text-align: center;
 }
 
-.bg-wave{
+.bg-wave {
   position: absolute;
-  left: 0;
-  bottom: -78px;
+  left: 0px;
   width: 100%;
-  height: 80px;
-}
-.bg-wave.wave1{
+  height: 150px;
+  bottom: -140px;
   opacity: 1;
-  animation-delay: 0s;
-  z-index: 1000;
-  background-image: url(../images/ddd.svg);
+  animation: wave1 30s linear infinite reverse;
+  background-image: url(../images/wave.svg);
+  background-position: top;
+  background-repeat: repeat-x;
 }
-.bg-wave.wave2{
-  animation: wave2 4s linear infinite reverse;
-  opacity: .7;
+.bg-wave.wave1 {
+  position: absolute;
+  left: 0px;
+  height: 130px;
+  bottom: -130px;
+  opacity: 0.5;
   animation-delay: -4s;
-  z-index: 999;
-  background-image: url(../images/ddd.svg);
+  animation: wave1 8s linear infinite reverse;
+  background-image: url(../images/wave.svg);
+  background-position: bottom;
+  background-size: cover;
 }
-
-@keyframes wave2 {
-  0%{
-    background-position-x: 0px;
-
-  }
-  100%{
-    background-position-x: 700px;
-  }
+.bg-wave.wave2 {
+  position: absolute;
+  left: 0px;
+  height: 150px;
+  bottom: -150px;
+  opacity: 0.3;
+  animation-delay: -8s;
+  animation: wave1 15s linear infinite alternate;
+  background-image: url(../images/wave.svg);
+  background-position: bottom;
+  background-size: cover;
 }
-.bg-wave.wave3{
-  animation: wave3 5s linear infinite reverse;
-  opacity: .5;
-  z-index: 99;
-  animation-delay: 0s;
-  background-image: url(../images/ddd.svg);
-}
-
-@keyframes wave3 {
-  0%{
-    background-position-x: -700px;
-
+@keyframes wave1 {
+  0% {
+    background-position-x: -1500px;
   }
-  100%{
-    background-position-x: 0px;
+  100% {
+    background-position-x: 1500px;
   }
 }
-.bg-wave.wave4{
-  animation: wave4 5s linear infinite normal;
-  opacity: .5;
-  z-index: 9;
-  animation-delay: 0s;
-  background-image: url(../images/ddd.svg);
-}
 
-@keyframes wave4 {
-  0%{
-    background-position-x: 700px;
-
-  }
-  100%{
-    background-position-x: 0px;
-  }
-}
 .box {
   position: relative;
   margin: 30px 0px;
@@ -757,13 +771,13 @@ h1 u {
 .article-section .box .bg-box {
   position: absolute;
   width: 100%;
-  min-height: 200px;
+  min-height: 250px;
   background-color: #ffffff;
   box-shadow: 0px 0px 20px grey;
   border-radius: 20px;
   bottom: 0;
 }
-.article-section .box .bg-box h4 a{
+.article-section .box .bg-box h4 a {
   position: absolute;
   width: 100%;
   padding: 0px 30px;
@@ -788,11 +802,11 @@ h1 u {
   margin: 0 auto;
   bottom: 50px;
 } */
-.article-section .btn{
-  padding-top: 50px;
-  transition: .3s ease;
+.article-section .btn {
+  padding: 50px 0px;
+  transition: 0.3s ease;
 }
-.article-section .btn:hover{
+.article-section .btn:hover {
   padding-top: 30px;
 }
 .article-section .btn a {
@@ -810,7 +824,7 @@ align-items: center;
 } */
 /* ---------footer---------- */
 footer {
-  padding: 100px 0px 50px 0px;
+  padding: 200px 0px 50px 0px;
   min-height: 500px;
   background: linear-gradient(
     to right top,
