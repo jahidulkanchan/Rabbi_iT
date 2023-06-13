@@ -166,17 +166,13 @@ h1 u {
   }
 
   body .article-section .box .bg-box {
-    min-height: 200px;
-    bottom: -60px;
+    bottom: -50px;
   }
   body .article-section .btn {
     margin-top: 0px;
   }
   body .article-section .box .bg-box h4 a {
     padding: 20px 30px;
-  }
-  body .box .image img {
-    top: -50px;
   }
   body .bg-wave.wave1 {
     bottom: -100px;
@@ -825,9 +821,10 @@ h1 u {
   left: 0px;
   bottom: 10px;
   color: #000000;
+  z-index: 9999;
 }
 .article-section .box .image img {
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0;
   right: 0;
