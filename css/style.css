@@ -174,8 +174,14 @@ h1 u {
   body .article-section .box .bg-box h4 a {
     padding: 20px 30px;
   }
-  body body .box .image img {
+  body .box .image img {
     top: -50px;
+  }
+  body .bg-wave.wave1 {
+    bottom: -100px;
+  }
+  body .bg-wave.wave2 {
+    bottom: -130px;
   }
 }
 /* -----------End---------- */
@@ -721,34 +727,28 @@ h1 u {
   left: 0px;
   width: 100%;
   height: 150px;
-  bottom: -145px;
+  bottom: -147px;
   opacity: 1;
   animation: wave1 60s linear infinite reverse;
   background-image: url(../images/wave\ 1.svg);
   background-position: top;
   background-repeat: repeat-x;
-  background-size: cover;
 }
 .bg-wave.wave1 {
   position: absolute;
   left: 0px;
-  height: 130px;
-  bottom: -130px;
   opacity: 0.5;
   animation-delay: -4s;
-  animation: wave1 15s linear infinite reverse;
+  animation: wave1 15s linear infinite alternate-reverse;
   background-image: url(../images/wave\ 1.svg);
   background-position: bottom;
-  background-size: cover;
 }
 .bg-wave.wave2 {
   position: absolute;
   left: 0px;
-  height: 150px;
-  bottom: -150px;
-  opacity: 0.3;
+  opacity: 0.4;
   animation-delay: -8s;
-  animation: wave1 30s linear infinite alternate;
+  animation: wave1 30s linear infinite normal;
   background-image: url(../images/wave\ 1.svg);
   background-position: bottom;
   background-size: cover;
